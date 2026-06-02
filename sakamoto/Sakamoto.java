@@ -34,7 +34,7 @@ public class Sakamoto {
         //Finds the "day code" (Step 3)
         int dayCode = result % 7;
 
-        //Prints the day as a string based on the "Day Code"
+        //Prints the day as a string based on the "day code"
         System.out.println(dayString[dayCode]);
     }
 }
