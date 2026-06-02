@@ -24,7 +24,5 @@ public class Sakamoto {
         if (inputMonth < 3) {
             inputYear = (inputYear - 1);
         }
-
-        int result = (inputYear + Math.floorDiv())
     }
 }
