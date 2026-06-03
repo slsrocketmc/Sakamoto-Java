@@ -36,6 +36,7 @@ public class Sakamoto {
         int dayCode = result % 7;
 
         //Prints the day as a string based on the "day code"
-        System.out.println(dayString[dayCode]);
+        System.out.println();
+        System.out.println(inputDate + " is a " + dayString[dayCode]);
     }
 }
