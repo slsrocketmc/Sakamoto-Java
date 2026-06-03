@@ -12,16 +12,17 @@ public class Sakamoto {
         //Creates a string array for use with "day codes"
         String[] dayString = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
-        //New line
-        System.out.println();
+        //Requests and saves a date as a single string
+        System.out.println("Please enter a date (DD/MM/YYYY):");
+        String inputDate = scanner.nextLine();
 
-        //Requests and saves year, month, and day as integers
-        System.out.println("Enter a year as a four digit integer:");
-        int inputYear = scanner.nextInt();
-        System.out.println("Enter a month as a two digit integer");
-        int inputMonth = scanner.nextInt();
-        System.out.println("Enter a day as a two digit integer");
-        int inputDay = scanner.nextInt();
+        //Converts the input string to an array
+        String[] inputDateArray = inputDate.split("/");
+
+        //Parses values for day, month, and year from the string array
+        int inputDay = Integer.parseInt(inputDateArray[0]);
+        int inputMonth = Integer.parseInt(inputDateArray[1]);
+        int inputYear = Integer.parseInt(inputDateArray[2]);
 
         //Adjusts the year (Step 1)
         if (inputMonth < 3) {
