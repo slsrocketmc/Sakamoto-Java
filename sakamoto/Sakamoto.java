@@ -25,7 +25,7 @@ public class Sakamoto {
 
         //Adjusts the year (Step 1)
         if (inputMonth < 3) {
-            inputYear = (inputYear - 1);
+            inputYear = inputYear - 1;
         }
 
         //"Computes the sum" (Step 2)
